@@ -148,7 +148,7 @@ end
 --	EVENTS
 --
 Event.register(defines.events.on_tick, function(event)
-	new_list = {}
+	local new_list = {}
 	for i, action in pairs(global.cluster_map_tick_actions) do
 		if action.tick <= game.tick then
 			if action.action == "update_tag" then
